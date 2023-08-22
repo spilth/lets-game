@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import "./App.css";
 import games from "./games";
 import { GameCard } from "./GameCard";
+import { Row } from "react-bootstrap";
 
 const App = () => {
   const [players, setPlayers] = useState<number>(2);
@@ -22,41 +23,51 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>Let's Game!</h1>
+      <h1 className="text-center">Let's Game!</h1>
 
-      <p>A collection of games you can easily play online with others.</p>
+      <p className="lead text-center">
+        A collection of games you can easily play online with others.
+      </p>
 
-      <fieldset>
-        <legend>Filters:</legend>
-
-        <p>
-          <label htmlFor="players"> Number of Players</label>
+      <form className="mb-4">
+        <div className="mb-3">
+          <label htmlFor="players"> Number of Players: {players}</label>
           <input
+            className="form-range"
             id="players"
-            type="number"
+            type="range"
             min="1"
-            max="50"
+            max="32"
             value={players}
             onChange={(event) =>
               setPlayers(Number.parseInt(event.target.value))
             }
           />
-        </p>
+        </div>
 
-        <p>
+        <div className="form-check">
           <input
+            className="form-check-input"
             id="freeToHost"
             type="checkbox"
             checked={showOnlyFreeToHost}
             onClick={() => setShowOnlyFreeToHost(!showOnlyFreeToHost)}
           />
-          <label htmlFor="freeToHost">Only Show "Free to Host" Games</label>
-        </p>
-      </fieldset>
+          <label className="form-check-label" htmlFor="freeToHost">
+            Only Show "Free to Host" Games
+          </label>
+        </div>
+      </form>
 
-      {filteredGames.map((game) => (
-        <GameCard game={game} />
-      ))}
+      <h2 className="text-center mb-3">
+        {filteredGames.length} games to play!
+      </h2>
+
+      <Row xs={1} sm={2} md={2} lg={3} xl={3} xxl={3}>
+        {filteredGames.map((game) => (
+          <GameCard game={game} />
+        ))}
+      </Row>
     </div>
   );
 };
