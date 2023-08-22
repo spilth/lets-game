@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import "./App.css";
 import games from "./games";
+import { GameCard } from "./GameCard";
 
 const App = () => {
   const [players, setPlayers] = useState<number>(2);
@@ -49,26 +50,12 @@ const App = () => {
             checked={showOnlyFreeToHost}
             onClick={() => setShowOnlyFreeToHost(!showOnlyFreeToHost)}
           />
-          <label htmlFor="freeToHost">Show Only Free to Host Games</label>
+          <label htmlFor="freeToHost">Only Show "Free to Host" Games</label>
         </p>
       </fieldset>
 
       {filteredGames.map((game) => (
-        <>
-          <h2>
-            <a href={game.url}>{game.name}</a>{" "}
-            <small className="text-muted">
-              {!game.maximumPlayers && <>{game.minimumPlayers}+ players</>}
-              {game.maximumPlayers && (
-                <>
-                  {game.minimumPlayers} to {game.maximumPlayers} players
-                </>
-              )}
-              {game.freeToHost && <>, Free to Host</>}
-            </small>
-          </h2>
-          <p>{game.description}</p>
-        </>
+        <GameCard game={game} />
       ))}
     </div>
   );

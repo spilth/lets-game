@@ -40,14 +40,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    color: #060;
-}
-
-a:visited:hover {
-    color: #0a0;
-}
-
 fieldset {
     border-radius: 4px;
 }
@@ -68,4 +60,22 @@ input[type=number] {
 
 .text-muted {
     color: #aaa;
+}
+
+.badge-free {
+    background: #00aa00;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.badge-pay {
+    background: #ffaa00;
+    color: #000;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bolder;
 }
