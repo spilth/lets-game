@@ -51,6 +51,18 @@ export const GameCard = ({ game }: GameCardProps) => (
           )}
         </Card.Text>
       </Card.Body>
+      <Card.Footer>
+        {game.group ? (
+          <React.Fragment>
+            Part of{" "}
+            <a href={game.group.url} className="text-decoration-none">
+              {game.group.name}
+            </a>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>Standalone Game</React.Fragment>
+        )}
+      </Card.Footer>
     </Card>
   </Col>
 );

@@ -1,6 +1,6 @@
 import { Game } from "./types";
 
-const games: Game[] = [
+const webGames: Game[] = [
   {
     name: "Codenames",
     description:
@@ -125,6 +125,9 @@ const games: Game[] = [
     freeToHost: true,
     freeToJoin: true,
   },
+];
+
+const jackboxGames: Game[] = [
   {
     name: "You Don't Know Jack - 2015",
     description:
@@ -135,6 +138,10 @@ const games: Game[] = [
     maximumPlayers: 4,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack",
+      url: "https://www.jackboxgames.com/party-pack/",
+    },
   },
   {
     name: "Lie Swatter",
@@ -145,6 +152,10 @@ const games: Game[] = [
     maximumPlayers: 100,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack",
+      url: "https://www.jackboxgames.com/party-pack/",
+    },
   },
   {
     name: "Fibbage XL",
@@ -156,6 +167,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack",
+      url: "https://www.jackboxgames.com/party-pack/",
+    },
   },
   {
     name: "Word Spud",
@@ -166,6 +181,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack",
+      url: "https://www.jackboxgames.com/party-pack/",
+    },
   },
   {
     name: "Drawful",
@@ -177,6 +196,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack",
+      url: "https://www.jackboxgames.com/party-pack/",
+    },
   },
   {
     name: "Bomb Corp.",
@@ -188,6 +211,10 @@ const games: Game[] = [
     maximumPlayers: 4,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 2",
+      url: "https://www.jackboxgames.com/party-pack-two/",
+    },
   },
   {
     name: "Fibbage 2",
@@ -199,6 +226,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 2",
+      url: "https://www.jackboxgames.com/party-pack-two/",
+    },
   },
   {
     name: "Bidiots",
@@ -210,6 +241,10 @@ const games: Game[] = [
     maximumPlayers: 6,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 2",
+      url: "https://www.jackboxgames.com/party-pack-two/",
+    },
   },
   {
     name: "Earwax",
@@ -221,6 +256,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 2",
+      url: "https://www.jackboxgames.com/party-pack-two/",
+    },
   },
   {
     name: "Quiplash XL",
@@ -232,6 +271,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 2",
+      url: "https://www.jackboxgames.com/party-pack-two/",
+    },
   },
   {
     name: "Trivia Murder Party",
@@ -243,6 +286,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 3",
+      url: "https://www.jackboxgames.com/party-pack-three/",
+    },
   },
   {
     name: "Guesspionage",
@@ -253,6 +300,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 3",
+      url: "https://www.jackboxgames.com/party-pack-three/",
+    },
   },
   {
     name: "Fakin' It",
@@ -264,6 +315,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 3",
+      url: "https://www.jackboxgames.com/party-pack-three/",
+    },
   },
   {
     name: "Quiplash 2",
@@ -275,6 +330,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 3",
+      url: "https://www.jackboxgames.com/party-pack-three/",
+    },
   },
   {
     name: "Tee K.O.",
@@ -286,6 +345,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 3",
+      url: "https://www.jackboxgames.com/party-pack-three/",
+    },
   },
   {
     name: "Fibbage 3",
@@ -297,6 +360,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 4",
+      url: "https://www.jackboxgames.com/party-pack-four/",
+    },
   },
   {
     name: "Monster Seeking Monster",
@@ -308,6 +375,10 @@ const games: Game[] = [
     maximumPlayers: 7,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 4",
+      url: "https://www.jackboxgames.com/party-pack-four/",
+    },
   },
   {
     name: "Civic Doodle",
@@ -319,6 +390,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 4",
+      url: "https://www.jackboxgames.com/party-pack-four/",
+    },
   },
   {
     name: "Survive the Internet",
@@ -330,6 +405,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 4",
+      url: "https://www.jackboxgames.com/party-pack-four/",
+    },
   },
   {
     name: "Bracketeering",
@@ -341,6 +420,10 @@ const games: Game[] = [
     maximumPlayers: 16,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 4",
+      url: "https://www.jackboxgames.com/party-pack-four/",
+    },
   },
   {
     name: "You Don't Know Jack - Full Stream",
@@ -352,6 +435,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 5",
+      url: "https://www.jackboxgames.com/party-pack-five/",
+    },
   },
   {
     name: "Split The Room",
@@ -363,6 +450,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 5",
+      url: "https://www.jackboxgames.com/party-pack-five/",
+    },
   },
   {
     name: "Mad Verse City",
@@ -374,6 +465,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 5",
+      url: "https://www.jackboxgames.com/party-pack-five/",
+    },
   },
   {
     name: "Patently Stupid",
@@ -385,6 +480,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 5",
+      url: "https://www.jackboxgames.com/party-pack-five/",
+    },
   },
   {
     name: "Zeeple Dome",
@@ -396,6 +495,10 @@ const games: Game[] = [
     maximumPlayers: 6,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 5",
+      url: "https://www.jackboxgames.com/party-pack-five/",
+    },
   },
   {
     name: "Trivia Murder Party 2",
@@ -407,6 +510,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 6",
+      url: "https://www.jackboxgames.com/party-pack-six/",
+    },
   },
   {
     name: "Role Models",
@@ -418,6 +525,10 @@ const games: Game[] = [
     maximumPlayers: 6,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 6",
+      url: "https://www.jackboxgames.com/party-pack-six/",
+    },
   },
   {
     name: "Joke Boat",
@@ -429,6 +540,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 6",
+      url: "https://www.jackboxgames.com/party-pack-six/",
+    },
   },
   {
     name: "Dictionarium",
@@ -440,6 +555,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 6",
+      url: "https://www.jackboxgames.com/party-pack-six/",
+    },
   },
   {
     name: "Push The Button",
@@ -451,6 +570,10 @@ const games: Game[] = [
     maximumPlayers: 10,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 6",
+      url: "https://www.jackboxgames.com/party-pack-six/",
+    },
   },
   {
     name: "Quiplash 3",
@@ -462,6 +585,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 7",
+      url: "https://www.jackboxgames.com/party-pack-seven/",
+    },
   },
   {
     name: "The Devils and the Details",
@@ -473,6 +600,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 7",
+      url: "https://www.jackboxgames.com/party-pack-seven/",
+    },
   },
   {
     name: "Champ’d Up",
@@ -484,6 +615,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 7",
+      url: "https://www.jackboxgames.com/party-pack-seven/",
+    },
   },
   {
     name: "Talking Points",
@@ -495,6 +630,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 7",
+      url: "https://www.jackboxgames.com/party-pack-seven/",
+    },
   },
   {
     name: "Blather ‘Round",
@@ -506,6 +645,10 @@ const games: Game[] = [
     maximumPlayers: 6,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 7",
+      url: "https://www.jackboxgames.com/party-pack-seven/",
+    },
   },
   {
     name: "Drawful Animate",
@@ -517,6 +660,10 @@ const games: Game[] = [
     maximumPlayers: 10,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 8",
+      url: "https://www.jackboxgames.com/party-pack-eight/",
+    },
   },
   {
     name: "Job Job",
@@ -528,6 +675,10 @@ const games: Game[] = [
     maximumPlayers: 10,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 8",
+      url: "https://www.jackboxgames.com/party-pack-eight/",
+    },
   },
   {
     name: "The Poll Mine",
@@ -539,6 +690,10 @@ const games: Game[] = [
     maximumPlayers: 10,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 8",
+      url: "https://www.jackboxgames.com/party-pack-eight/",
+    },
   },
   {
     name: "Weapons Drawn",
@@ -550,6 +705,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 8",
+      url: "https://www.jackboxgames.com/party-pack-eight/",
+    },
   },
   {
     name: "The Wheel of Enormous Proportions",
@@ -561,6 +720,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 8",
+      url: "https://www.jackboxgames.com/party-pack-eight/",
+    },
   },
   {
     name: "Drawful 2",
@@ -624,6 +787,10 @@ const games: Game[] = [
     maximumPlayers: 9,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 9",
+      url: "https://www.jackboxgames.com/party-pack-nine/",
+    },
   },
   {
     name: "Junktopia",
@@ -635,6 +802,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 9",
+      url: "https://www.jackboxgames.com/party-pack-nine/",
+    },
   },
   {
     name: "Nonsensory",
@@ -646,6 +817,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 9",
+      url: "https://www.jackboxgames.com/party-pack-nine/",
+    },
   },
   {
     name: "Fibbage 4",
@@ -657,6 +832,10 @@ const games: Game[] = [
     maximumPlayers: 8,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 9",
+      url: "https://www.jackboxgames.com/party-pack-nine/",
+    },
   },
   {
     name: "Quixort",
@@ -668,7 +847,13 @@ const games: Game[] = [
     maximumPlayers: 10,
     freeToHost: false,
     freeToJoin: true,
+    group: {
+      name: "The Jackbox Party Pack 9",
+      url: "https://www.jackboxgames.com/party-pack-nine/",
+    },
   },
 ];
+
+const games: Game[] = webGames.concat(jackboxGames);
 
 export default games;

@@ -7,4 +7,8 @@ export interface Game {
   maximumPlayers?: number;
   freeToHost: boolean;
   freeToJoin: boolean;
+  group?: {
+    name: string;
+    url: string;
+  };
 }
