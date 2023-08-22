@@ -8,7 +8,7 @@ interface GameCardProps {
 
 export const GameCard = ({ game }: GameCardProps) => (
   <Col key={game.name}>
-    <Card className="mb-4 shadow">
+    <Card className="mb-4 shadow border-dark text-bg-light">
       {game.image && (
         <a href={game.url}>
           <Card.Img variant="top" src={`/images/${game.image}`} />
