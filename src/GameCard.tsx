@@ -9,11 +9,16 @@ interface GameCardProps {
 export const GameCard = ({ game }: GameCardProps) => (
   <Col key={game.name}>
     <Card className="mb-4 shadow">
+      {game.image && (
+        <a href={game.url}>
+          <Card.Img variant="top" src={`/images/${game.image}`} />
+        </a>
+      )}
       <Card.Body>
         <Card.Title>
           <a href={game.url} className="text-decoration-none">
             {game.name}
-          </a>{" "}
+          </a>
         </Card.Title>
         <Card.Subtitle className="text-muted mb-2">
           {game.maximumPlayers ? (
