@@ -5,8 +5,8 @@ import { GameCard } from "./GameCard";
 import { Row } from "react-bootstrap";
 
 const App = () => {
-  const [players, setPlayers] = useState<number>(2);
-  const [showOnlyFreeToHost, setShowOnlyFreeToHost] = useState<boolean>(true);
+  const [players, setPlayers] = useState<number>(4);
+  const [showOnlyFreeToHost, setShowOnlyFreeToHost] = useState<boolean>(false);
 
   const filteredGames = useMemo(
     () =>
