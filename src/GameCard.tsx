@@ -8,7 +8,7 @@ interface GameCardProps {
 
 export const GameCard = ({ game }: GameCardProps) => (
   <Col key={game.name}>
-    <Card className="mb-4 shadow border-dark text-bg-light">
+    <Card className="mb-4 shadow border-dark-subtle text-bg-light">
       {game.image && (
         <a href={game.url}>
           <Card.Img variant="top" src={`/images/${game.image}`} />
@@ -20,7 +20,7 @@ export const GameCard = ({ game }: GameCardProps) => (
             {game.name}
           </a>
         </Card.Title>
-        <Card.Subtitle className="text-muted mb-2">
+        <Card.Subtitle className="text-body-secondary mb-2">
           {game.maximumPlayers ? (
             <React.Fragment>
               {game.minimumPlayers} to {game.maximumPlayers} players
@@ -29,28 +29,26 @@ export const GameCard = ({ game }: GameCardProps) => (
             <React.Fragment>{game.minimumPlayers}+ players</React.Fragment>
           )}
         </Card.Subtitle>
+        <Card.Text>{game.description}</Card.Text>
         <Card.Text>
-          <p>{game.description}</p>
-          <p>
-            {game.freeToHost ? (
-              <span className="badge rounded-pill text-bg-success">
-                Free to Host
-              </span>
-            ) : (
-              <span className="badge rounded-pill text-bg-warning">
-                Pay to Host
-              </span>
-            )}
-            {game.freeToJoin ? (
-              <span className="badge rounded-pill text-bg-success">
-                Free to Join
-              </span>
-            ) : (
-              <span className="badge rounded-pill text-bg-warning">
-                Pay to Join
-              </span>
-            )}
-          </p>
+          {game.freeToHost ? (
+            <span className="badge rounded-pill text-bg-success me-1">
+              Free to Host
+            </span>
+          ) : (
+            <span className="badge rounded-pill text-bg-warning me-1">
+              Pay to Host
+            </span>
+          )}
+          {game.freeToJoin ? (
+            <span className="badge rounded-pill text-bg-success me-1">
+              Free to Join
+            </span>
+          ) : (
+            <span className="badge rounded-pill text-bg-warning me-1">
+              Pay to Join
+            </span>
+          )}
         </Card.Text>
       </Card.Body>
     </Card>
