@@ -91,6 +91,74 @@ const webGames: Game[] = [
     minimumPlayers: 3,
     freeToHost: true,
     freeToJoin: true,
+    group: {
+      name: "One Word  Games",
+      url: "https://oneword.games/about",
+    },
+  },
+  {
+    name: "Incrypt",
+    description:
+      "Incrypt is a word game for two teams, based on Decrypto. Each spy incrypts three words by writing down three clues... Too complex? Your own team won't get the message. Too simple? The other team will intercept it! ",
+    url: "https://oneword.games/incrypt",
+    minimumPlayers: 6,
+    freeToHost: true,
+    freeToJoin: true,
+    group: {
+      name: "One Word  Games",
+      url: "https://oneword.games/about",
+    },
+  },
+  {
+    name: "Listorama",
+    description:
+      "In one minute, come up with the perfect list for a category & mode: Forgotten Four — Find four examples that nobody else will pick. Threefold — Think of the three most popular answers. One on One — Match *exactly* one other player",
+    url: "https://oneword.games/listorama",
+    minimumPlayers: 3,
+    freeToHost: true,
+    freeToJoin: true,
+    group: {
+      name: "One Word  Games",
+      url: "https://oneword.games/about",
+    },
+  },
+  {
+    name: "Storytime",
+    description: "You and your friends find yourself in a text adventure!",
+    url: "https://oneword.games/storytime",
+    minimumPlayers: 4,
+    freeToHost: true,
+    freeToJoin: true,
+    group: {
+      name: "One Word  Games",
+      url: "https://oneword.games/about",
+    },
+  },
+  {
+    name: "Pairwise",
+    description:
+      "This is an online word game inspired by Dixit, originally a picture-based board game. Write a clue, trick your friends, find the pair. But beware: If your clue is either too obvious or too off the wall, your friends will get ahead!,",
+    url: "https://oneword.games/pairwise",
+    minimumPlayers: 4,
+    freeToHost: true,
+    freeToJoin: true,
+    group: {
+      name: "One Word  Games",
+      url: "https://oneword.games/about",
+    },
+  },
+  {
+    name: "Quad Squad",
+    description:
+      "Cleverly categorize the world in less-than-obvious ways! Three rules: 1) Name a thing. 2) Everyone else decides where it goes on an ever-changing alignment chart. 3) The more different answers you get, the more points.",
+    url: "https://oneword.games/quadsquad",
+    minimumPlayers: 4,
+    freeToHost: true,
+    freeToJoin: true,
+    group: {
+      name: "One Word  Games",
+      url: "https://oneword.games/about",
+    },
   },
   {
     name: "Skribbl",
